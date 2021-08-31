@@ -49,3 +49,11 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/munch/munch-vendor.mk)
+
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+            Velvet \
+            talkback \
+            AndroidAutoStubPrebuilt \
+            GalleryGo \
+            GoogleFeedback

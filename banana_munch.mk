@@ -14,14 +14,19 @@ $(call inherit-product, vendor/banana/config/common.mk)
 # Inherit from device makefile
 $(call inherit-product, device/xiaomi/munch/device.mk)
 
+#Banandroid Stuff
 BANANA_MAINTAINER := Mudit
 WITH_GAPPS := true
 TARGET_ENABLE_BLUR := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGER_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_EXCLUDE_MATLOG := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_QUICK_TAP := true
 #BUILD_CORE_GAPPS := true
 #BUILD_CORE_GAPPS_EXTRA := true
 #TARGET_USE_GOOGLE_TELEPHONY := true
+
 PRODUCT_NAME := banana_munch
 PRODUCT_DEVICE := munch
 PRODUCT_MANUFACTURER := Xiaomi
